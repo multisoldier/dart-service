@@ -285,3 +285,48 @@ body {
   width: 150px;
   height: 55px;
 }
+
+.info-and-stats {
+  display: flex;
+  margin-top: 100px;
+}
+.stat-item {
+  width: 25%;
+  height: 150px;
+
+  &__content {
+    
+  }
+
+  &__icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__icon {
+  }
+
+  &__text {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+.stat-item--light-blue {
+  background-color: #80d8ff;
+}
+.stat-item--blue {
+  background-color: #82b1ff;
+}
+.stat-item--light-purple {
+  background-color: #b388ff;
+}
+.stat-item--light-pink {
+  background-color: #ea80fc;
+}
