@@ -272,6 +272,10 @@ body {
           align-items: center;
 }
 
+.video .material-icons.material-icons--white {
+  color: white;
+}
+
 .video__play-text {
   margin-top: 22px;
   margin-left: 245px;

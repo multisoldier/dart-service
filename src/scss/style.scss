@@ -193,6 +193,10 @@ body {
     align-items: center;
   }
 
+  .material-icons.material-icons--white {
+    color: white;
+  }
+
   &__play-text {
     margin-top: 22px;
     margin-left: 245px;
@@ -295,7 +299,6 @@ body {
   height: 150px;
 
   &__content {
-    
   }
 
   &__icon-wrapper {
