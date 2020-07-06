@@ -1,0 +1,27 @@
+//styles for all icons and svg objects:
+
+//HEADER=====================================
+//material icon PLAY-BUTTON:
+.material-icons.material-icons--white-play {
+  color: #ffffff;
+  font-size: 20px;
+}
+
+//material icon info-and-stats section=====================
+.stat-item__icon {
+  font-size: 30px;
+  &--light-blue {
+    color: #80d8ff;
+  }
+  &--blue {
+    color: #82b1ff;
+  }
+  &--purple {
+    color: #b388ff;
+  }
+  &--light-pink {
+    color: #ea80fc;
+  }
+}
+
+

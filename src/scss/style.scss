@@ -9,6 +9,7 @@
 }
 
 @import "fonts";
+@import "icons";
 
 //сбрасываю дефольные стили:
 body,
@@ -39,6 +40,10 @@ body {
   width: 1600px;
   margin: 0 auto;
 }
+
+//ICONS====================================================
+
+
 
 // HEADER======================================================================
 
@@ -193,10 +198,6 @@ body {
     align-items: center;
   }
 
-  .material-icons.material-icons--white {
-    color: white;
-  }
-
   &__play-text {
     margin-top: 22px;
     margin-left: 245px;
@@ -207,7 +208,7 @@ body {
   }
 }
 
-// advantages (1 article)========================================================
+// advantages (1 section)========================================================
 
 .easy-and-useful {
   display: flex;
@@ -289,6 +290,8 @@ body {
   width: 150px;
   height: 55px;
 }
+
+//info and stats (2 section)============================
 
 .info-and-stats {
   display: flex;
