@@ -10,7 +10,7 @@
 
 @import "fonts";
 @import "icons";
-
+@import "icofont";
 //сбрасываю дефольные стили:
 body,
 h1,
@@ -42,8 +42,6 @@ body {
 }
 
 //ICONS====================================================
-
-
 
 // HEADER======================================================================
 
@@ -208,7 +206,7 @@ body {
   }
 }
 
-// advantages (1 section)========================================================
+// ADVANTAGES (1 section)========================================================
 
 .easy-and-useful {
   display: flex;
@@ -226,6 +224,7 @@ body {
     width: 555px;
     height: 61px;
     margin-top: 20px;
+    text-align: center;
   }
 }
 
@@ -241,8 +240,6 @@ body {
 }
 .paragraph {
   color: #b0bec5;
-  font-family: Raleway;
-  text-align: center;
   font-size: 15px;
   font-weight: 400;
   line-height: 25px;
@@ -259,15 +256,11 @@ body {
   align-items: center;
   width: 344px;
   margin-right: 201px;
-  &__img.tool-item__img--note {
+
+  &__icon-wrapper {
     margin-bottom: 45px;
   }
-  &__img.tool-item__img--man {
-    margin-bottom: 40px;
-  }
-  &__img.tool-item__img--work-man {
-    margin-bottom: 44px;
-  }
+
   &__header {
     margin-bottom: 20px;
   }
@@ -291,7 +284,7 @@ body {
   height: 55px;
 }
 
-//info and stats (2 section)============================
+//INFO AND STATS (2 section)============================
 
 .info-and-stats {
   display: flex;
@@ -300,8 +293,12 @@ body {
 .stat-item {
   width: 25%;
   height: 150px;
-
+  display: flex;
+  align-items: center;
+  justify-content: center;
   &__content {
+    display: flex;
+    align-items: center;
   }
 
   &__icon-wrapper {
@@ -314,10 +311,8 @@ body {
     justify-content: center;
   }
 
-  &__icon {
-  }
-
   &__text {
+    margin-left: 23px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 400;
@@ -335,4 +330,103 @@ body {
 }
 .stat-item--light-pink {
   background-color: #ea80fc;
+}
+
+//SERVICES (3 section)
+
+.services {
+  margin-top: 48px;
+}
+.services-wrapper {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.services__header {
+  margin-bottom: 29px;
+  text-align: center;
+  position: relative;
+}
+.services__paragraph {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.services-statistics {
+  width: 800px;
+  height: 240px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  background-color: #ffffff;
+  &__header {
+    height: 50px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon-left-wrapper {
+    margin-left: 25px;
+  }
+
+  &__box-heading {
+    margin-left: 25px;
+    color: #061e37;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  &__icon-right-wrapper {
+    margin-left: 764px;
+    position: absolute;
+  }
+
+  &__img {
+    float: left;
+    margin: 0 25px 0 25px;
+  }
+
+  &__paragraph-top {
+    display: block;
+    color: #061e37;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.45px;
+    margin-bottom: 30px;
+  }
+  &__paragraph-bottom {
+    color: #061e37;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    letter-spacing: 0.45px;
+  }
+}
+
+.services-item {
+  display: flex;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13);
+  border-radius: 5px;
+  background-color: #ffffff;
+  margin-top: 20px;
+  position: relative;
+  &__icon-left-wrapper {
+    margin-left: 25px;
+  }
+
+  &__box-heading {
+    color: #061e37;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left: 24px;
+  }
+
+  &__icon-right-wrapper {
+    margin-left: 764px;
+    position: absolute;
+  }
 }

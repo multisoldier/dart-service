@@ -24,4 +24,52 @@
   }
 }
 
+//icofont icons (tools section)
+.icofont-tasks-alt {
+  color: #b388ff;
+  font-size: 80px;
+  font-weight: 400;
+}
 
+.icofont-team-alt {
+  font-size: 80px;
+  font-weight: 400;
+  color: #80d8ff;
+}
+
+.icofont-worker {
+  font-size: 80px;
+  font-weight: 400;
+  color: #ea80fc;
+}
+
+//Material icons SERVICES section:
+.services-statistics {
+  &__icon-left {
+    color: #061e37;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__icon-right {
+    color: #061e37;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
+
+.services-item {
+  &__icon-left {
+    color: #061e37;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+  &__icon-right {
+    color: #061e37;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+}
