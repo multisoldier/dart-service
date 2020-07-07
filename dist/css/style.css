@@ -117,6 +117,15 @@
   line-height: 25px;
 }
 
+.right-block__arrow-up,
+.right-block__arrow-down {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 25px;
+  margin: 0 auto;
+}
+
 /*! 
 * @package IcoFont 
 * @version 1.0.1 
@@ -921,6 +930,77 @@ body {
   position: absolute;
 }
 
+.reviews {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 564px;
+  background-image: -o-linear-gradient(143deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%), url("../img/reviews-background.jpg");
+  background-image: linear-gradient(-53deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%), url("../img/reviews-background.jpg");
+}
+
+.left-block {
+  width: 515px;
+  margin: 134px 165px 0 80px;
+}
+
+.left-block__heading {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: 400;
+  width: 441px;
+  margin-bottom: 19px;
+}
+
+.left-block__text {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 25px;
+}
+
+.left-block__button-wrapper {
+  margin-top: 78px;
+}
+
+.left-block__button-get {
+  background-color: #061e37;
+}
+
+.right-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 760px;
+}
+
+.right-block__review-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.right-block__user-photo-wrapper {
+  width: 60px;
+  height: 60px;
+}
+
+.right-block__review-text-block {
+  width: 650px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
 .webp .header { background-image: -o-linear-gradient(143deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%), url(../img/header-background-img.webp); }
 
 .webp .header { background-image: linear-gradient(-53deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%), url(../img/header-background-img.webp); }
@@ -928,3 +1008,7 @@ body {
 .webp .video { background-image: -o-linear-gradient(143deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/video.webp); }
 
 .webp .video { background-image: linear-gradient(-53deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%), url(../img/video.webp); }
+
+.webp .reviews { background-image: -o-linear-gradient(143deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%), url(../img/reviews-background.webp); }
+
+.webp .reviews { background-image: linear-gradient(-53deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%), url(../img/reviews-background.webp); }

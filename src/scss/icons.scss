@@ -73,3 +73,15 @@
     line-height: 25px;
   }
 }
+
+//material icons section REVIEWS
+.right-block {
+  &__arrow-up,
+  &__arrow-down {
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 25px;
+    margin: 0 auto;
+  }
+}
