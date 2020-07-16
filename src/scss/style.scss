@@ -179,7 +179,7 @@ body {
   width: 600px;
   height: 320px;
   background-image: linear-gradient(-53deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.9) 100%),
-    url("../img/video.jpg");
+    url("../img/video.webp");
   border-radius: 5px;
   border: 1px solid #061e37;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -232,7 +232,7 @@ body {
 .heading-1-lvl {
   color: #061e37;
   font-size: 45px;
-  font-weight: 400;
+  font-weight: 600;
 }
 .heading-2-lvl {
   color: #b0bec5;
@@ -501,13 +501,6 @@ body {
     margin: 32px 0px 0px 30px;
   }
 
-  &__reviewer-name {
-    color: #061e37;
-    font-size: 18px;
-    font-weight: 700;
-    height: 14px;
-  }
-
   &__review-text-wrapper {
     margin: 20px 0px 0px 31px;
   }
@@ -524,4 +517,88 @@ body {
   }
 }
 
+.all-name {
+  color: #061e37;
+  font-size: 18px;
+  font-weight: 700;
+  height: 14px;
+}
+
+//TEAM (section 5) ==========================
+
+.team {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  &__heading {
+    text-align: center;
+    margin-top: 100px;
+  }
+
+  &__text {
+    text-align: center;
+    margin-top: 29px;
+  }
+
+  &__teamates-photos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 78px;
+  }
+
+  &__teamate-photo {
+    margin-right: 50px;
+  }
+
+  &__teamate-photo-box-shadow {
+    width: 160px;
+    height: 160px;
+    box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.5), inset 0 0 13px 5px rgba(0, 0, 0, 0.69);
+    border: 20px solid #ffffff;
+    border-radius: 50%;
+  }
+
+  &__teamate-photo--focus {
+    height: 160px;
+    width: 160px;
+    position: relative;
+    z-index: -2;
+  }
+
+  &__teamate-photo--last {
+    margin-right: 0px;
+  }
+
+  &__teamate-name {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  &__teamate-about-wrapper {
+    width: 645px;
+    height: 64px;
+    margin-top: 20px;
+  }
+
+  &__teamate-about {
+    color: #90a4ae;
+    text-align: center;
+  }
+
+  &__socials {
+    margin-top: 29px;
+  }
+}
+.socials {
+  width: 200px;
+  display: flex;
+  justify-content: space-between;
+  &__list {
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
 
