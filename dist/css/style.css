@@ -46,9 +46,29 @@
   font-style: normal;
 }
 
+.icofont-dart {
+  font-size: 30px;
+  color: white;
+}
+
 .material-icons.material-icons--white-play {
   color: #ffffff;
   font-size: 20px;
+  width: 60px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.material-icons.material-icons--white-play:hover {
+  cursor: pointer;
 }
 
 .stat-item__icon {
@@ -125,11 +145,36 @@
   font-family: "Material Icons";
 }
 
+.right-block__arrow-up:hover,
+.right-block__arrow-down:hover {
+  cursor: pointer;
+}
+
 .socials__icon {
   color: #90a4ae;
   font-size: 20px;
   font-weight: 400;
   line-height: 25px;
+}
+
+.icofont-twitter:hover {
+  color: #0099ff;
+}
+
+.icofont-facebook:hover {
+  color: #000fe2;
+}
+
+.icofont-linkedin:hover {
+  color: #357afa;
+}
+
+.icofont-dribble:hover {
+  color: #ff7eb4;
+}
+
+.icofont-behance:hover {
+  color: #2871f7;
 }
 
 .form__checkbox {
@@ -139,13 +184,9 @@
   font-weight: 400;
 }
 
-/*! 
-* @package IcoFont 
-* @version 1.0.1 
-* @author IcoFont https://icofont.com 
-* @copyright Copyright (c) 2015 - 2020 IcoFont 
-* @license - https://icofont.com/license/
-*/
+.form__checkbox:hover {
+  cursor: pointer;
+}
 
 @font-face {
   font-family: "IcoFont";
@@ -169,6 +210,10 @@
   /* Better Font Rendering =========== */
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+}
+
+.icofont-dart:before {
+  content: "\e808";
 }
 
 .icofont-tasks-alt:before {
@@ -195,12 +240,12 @@
   content: "\ed4d";
 }
 
-.icofont-behance:before {
-  content: "\ed22";
-}
-
 .icofont-dribble:before {
   content: "\ed2f";
+}
+
+.icofont-behance:before {
+  content: "\ed22";
 }
 
 .icofont-xs {
@@ -443,6 +488,17 @@ body {
   margin: 0 auto;
 }
 
+.all-buttons:hover {
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
+.all-buttons:active {
+  -webkit-box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
+
 .header {
   height: 750px;
   background-image: -o-linear-gradient(143deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%), url("../img/header-background-img.png");
@@ -465,10 +521,24 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .logo__img {
   margin-right: 10px;
+}
+
+.logo__img:hover {
+  color: #061e37;
+}
+
+.logo__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
 }
 
 .logo__text-top {
@@ -489,35 +559,32 @@ body {
   text-transform: uppercase;
 }
 
-.navigation-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.navigation {
   margin-left: 320px;
 }
 
-.navigation-top__lists {
+.navigation__lists {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style-type: none;
 }
 
-.navigation-top__link {
+.navigation__link-top {
   color: #ffffff;
   font-size: 15px;
   font-weight: 400;
-  line-height: 25px;
   text-decoration: none;
   margin-right: 50px;
 }
 
-.navigation-top__link--no-margin {
-  margin-right: 0px;
+.navigation__link-top:hover {
+  color: #061e37;
+  text-decoration: underline;
 }
 
-.navigation-top__link--active {
-  color: #061e37;
+.navigation__link--no-margin {
+  margin-right: 0px;
 }
 
 .button-sign-up {
@@ -528,6 +595,11 @@ body {
   border-radius: 2px;
   border: 1px solid #ffffff;
   text-decoration: none;
+}
+
+.button-sign-up:hover {
+  color: #061e37;
+  border: 1px solid #061e37;
 }
 
 .button-sign-up-wrapper {
@@ -650,6 +722,11 @@ body {
   text-transform: uppercase;
 }
 
+.video__play-text:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 .easy-and-useful {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,6 +807,10 @@ body {
   margin-bottom: 20px;
 }
 
+.tool-item__paragraph {
+  text-align: center;
+}
+
 .tool-item.tool-item--last {
   margin-right: 0px;
 }
@@ -773,6 +854,12 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.stat-item:hover {
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.76);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.76);
+  cursor: pointer;
 }
 
 .stat-item__content {
@@ -860,6 +947,12 @@ body {
   background-color: #ffffff;
 }
 
+.services-statistics:hover {
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+
 .services-statistics__header {
   height: 50px;
   display: -webkit-box;
@@ -868,6 +961,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.services-statistics__header:hover {
+  cursor: pointer;
 }
 
 .services-statistics__icon-left-wrapper {
@@ -924,6 +1021,13 @@ body {
   background-color: #ffffff;
   margin-top: 20px;
   position: relative;
+}
+
+.services-item:hover {
+  -webkit-box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.397);
+          box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.397);
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .services-item__icon-left-wrapper {
@@ -1020,6 +1124,10 @@ body {
   margin-right: 50px;
 }
 
+.right-block__user-photo-wrapper:hover {
+  cursor: pointer;
+}
+
 .right-block__review-text-block {
   width: 650px;
   height: 160px;
@@ -1057,6 +1165,11 @@ body {
   font-size: 18px;
   font-weight: 700;
   height: 14px;
+}
+
+.all-name:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 .team {
@@ -1097,6 +1210,10 @@ body {
 
 .team__teamate-photo {
   margin-right: 50px;
+}
+
+.team__teamate-photo:hover {
+  cursor: pointer;
 }
 
 .team__teamate-photo-box-shadow {
@@ -1207,6 +1324,10 @@ body {
   margin-left: 40px;
 }
 
+.form__input-text:focus {
+  outline: none;
+}
+
 .form__input-text--large {
   width: 577px;
   height: 130px;
@@ -1289,12 +1410,32 @@ body {
           justify-content: space-between;
 }
 
+.footer .logo__img-no-hover {
+  margin-right: 10px;
+}
+
 .footer__logo-wrapper {
   margin: 96px 0 0 80px;
 }
 
 .footer__navigation {
   margin: 105px 80px 0 0;
+}
+
+.footer .navigation__link-bottom {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  margin-right: 50px;
+}
+
+.footer .navigation__link-bottom:hover {
+  text-decoration: underline;
+}
+
+.footer .navigation__link--no-margin {
+  margin-right: 0px;
 }
 
 .footer__bot {
@@ -1327,6 +1468,10 @@ body {
   font-size: 15px;
   font-weight: 400;
   text-decoration: none;
+}
+
+.footer__about-link:hover {
+  text-decoration: underline;
 }
 
 .footer__socials {

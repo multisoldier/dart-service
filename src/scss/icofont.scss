@@ -1,10 +1,3 @@
-/*! 
-* @package IcoFont 
-* @version 1.0.1 
-* @author IcoFont https://icofont.com 
-* @copyright Copyright (c) 2015 - 2020 IcoFont 
-* @license - https://icofont.com/license/
-*/
 
 @font-face
 {
@@ -31,6 +24,11 @@ url("../fonts/icofont.woff") format("woff");
 /* Better Font Rendering =========== */
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
+}
+
+.icofont-dart:before
+{
+  content: "\e808";
 }
 
 .icofont-tasks-alt:before
@@ -63,14 +61,14 @@ url("../fonts/icofont.woff") format("woff");
   content: "\ed4d";
 }
 
-.icofont-behance:before
-{
-  content: "\ed22";
-}
-
 .icofont-dribble:before
 {
   content: "\ed2f";
+}
+
+.icofont-behance:before
+{
+  content: "\ed22";
 }
 
 .icofont-xs

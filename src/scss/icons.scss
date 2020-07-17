@@ -1,10 +1,24 @@
 //styles for all icons and svg objects:
 
 //HEADER=====================================
+//icofont logo
+.icofont-dart {
+  font-size: 30px;
+  color: white;
+}
+
 //material icon PLAY-BUTTON:
 .material-icons.material-icons--white-play {
   color: #ffffff;
   font-size: 20px;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 //material icon info-and-stats section=====================
@@ -82,6 +96,9 @@
     font-size: 45px;
     font-weight: 400;
     font-family: "Material Icons";
+    &:hover {
+      cursor: pointer;
+    }
   }
 }
 
@@ -93,15 +110,20 @@
   line-height: 25px;
 }
 
-.icofont-twitter {
+.icofont-twitter:hover {
+  color: rgb(0, 153, 255);
 }
-.icofont-facebook {
+.icofont-facebook:hover {
+  color: rgb(0, 15, 226);
 }
-.icofont-linkedin {
+.icofont-linkedin:hover {
+  color: rgb(53, 122, 250);
 }
-.icofont-dribble {
+.icofont-dribble:hover {
+  color: rgb(255, 126, 180);
 }
-.icofont-behance {
+.icofont-behance:hover {
+  color: rgb(40, 113, 247);
 }
 
 //Material Icons for contacts============
@@ -111,5 +133,7 @@
   font-family: "Material Icons";
   font-size: 20px;
   font-weight: 400;
+  &:hover {
+    cursor: pointer;
+  }
 }
-

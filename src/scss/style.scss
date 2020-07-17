@@ -41,7 +41,13 @@ body {
   margin: 0 auto;
 }
 
-//ICONS====================================================
+.all-buttons:hover {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+}
+.all-buttons:active {
+  box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.5);
+}
 
 // HEADER======================================================================
 
@@ -50,6 +56,7 @@ body {
   background-image: linear-gradient(-53deg, rgba(0, 184, 212, 0.9) 0%, rgba(29, 233, 182, 0.9) 100%),
     url("../img/header-background-img.png");
 }
+
 .header-top {
   height: 30px;
   display: flex;
@@ -60,8 +67,16 @@ body {
 
 .logo {
   display: flex;
+  align-items: center;
   &__img {
     margin-right: 10px;
+    &:hover {
+      color: #061e37;
+    }
+  }
+  &__link {
+    display: flex;
+    text-decoration: none;
   }
   &__text-top {
     display: block;
@@ -81,26 +96,25 @@ body {
   }
 }
 
-.navigation-top {
-  display: flex;
+.navigation {
   margin-left: 320px;
   &__lists {
     display: flex;
     list-style-type: none;
   }
-  &__link {
+  &__link-top {
     color: #ffffff;
     font-size: 15px;
     font-weight: 400;
-    line-height: 25px;
     text-decoration: none;
     margin-right: 50px;
+    &:hover {
+      color: #061e37;
+      text-decoration: underline;
+    }
   }
   &__link--no-margin {
     margin-right: 0px;
-  }
-  &__link--active {
-    color: #061e37;
   }
 }
 
@@ -112,6 +126,10 @@ body {
   border-radius: 2px;
   border: 1px solid #ffffff;
   text-decoration: none;
+  &:hover {
+    color: #061e37;
+    border: 1px solid #061e37;
+  }
 }
 .button-sign-up-wrapper {
   margin-left: 419px;
@@ -204,6 +222,10 @@ body {
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
+    &:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
   }
 }
 
@@ -265,6 +287,10 @@ body {
   &__header {
     margin-bottom: 20px;
   }
+
+  &__paragraph {
+    text-align: center;
+  }
 }
 .tool-item.tool-item--last {
   margin-right: 0px;
@@ -297,6 +323,10 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  &:hover {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.76);
+    cursor: pointer;
+  }
   &__content {
     display: flex;
     align-items: center;
@@ -359,10 +389,17 @@ body {
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   background-color: #ffffff;
+  &:hover {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+  }
   &__header {
     height: 50px;
     display: flex;
     align-items: center;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__icon-left-wrapper {
@@ -414,6 +451,11 @@ body {
   background-color: #ffffff;
   margin-top: 20px;
   position: relative;
+  &:hover {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.397);
+    border-radius: 5px;
+    cursor: pointer;
+  }
   &__icon-left-wrapper {
     margin-left: 25px;
   }
@@ -487,6 +529,9 @@ body {
 
   &__user-photo-wrapper {
     margin-right: 50px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__review-text-block {
@@ -522,6 +567,10 @@ body {
   font-size: 18px;
   font-weight: 700;
   height: 14px;
+  &:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
 }
 
 //TEAM (section 5) ==========================
@@ -549,6 +598,9 @@ body {
 
   &__teamate-photo {
     margin-right: 50px;
+    &:hover {
+      cursor: pointer;
+    }
   }
 
   &__teamate-photo-box-shadow {
@@ -652,6 +704,9 @@ body {
     &:nth-child(2n + 2) {
       margin-left: 40px;
     }
+    &:focus {
+      outline: none;
+    }
   }
 
   &__input-text--large {
@@ -712,6 +767,10 @@ body {
     justify-content: space-between;
   }
 
+  .logo__img-no-hover {
+    margin-right: 10px;
+  }
+
   &__logo-wrapper {
     margin: 96px 0 0 80px;
   }
@@ -720,6 +779,19 @@ body {
     margin: 105px 80px 0 0;
   }
 
+  .navigation__link-bottom {
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 50px;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .navigation__link--no-margin {
+    margin-right: 0px;
+  }
   &__bot {
     display: flex;
     margin-left: 80px;
@@ -745,46 +817,12 @@ body {
     font-size: 15px;
     font-weight: 400;
     text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   &__socials {
     margin-left: 955px;
   }
 }
-.logo {
-  &__img {
-  }
-
-  &__text-wrapper {
-  }
-
-  &__text-top {
-  }
-
-  &__text-bottom {
-  }
-}
-.navigation-top {
-  &__lists {
-  }
-
-  &__list {
-  }
-
-  &__link {
-  }
-
-  &__link--no-margin {
-  }
-}
-.socials {
-  &__list {
-  }
-
-  &__link {
-  }
-
-  &__icon {
-  }
-}
-
